@@ -1,0 +1,23 @@
+Parameters for the problem
+Temp = [0, -25, -50, -75,-100,-113, -125, -150, -175, -200]
+Impact_energy = [105,104,103, 97,63,40,34,28,25,24]
+This code will make a plot of Temperature vs. Impact Energy
+plot(Temp, Impact_energy)
+xlabel("Temp (Celsius)")
+ylabel("Impact Energy (J)")
+title("Graph of Temperature vs. Impact Energy")
+This code will establish a ductile-to-brittle  transition  temperature  as  the  temperature  corresponding to the average of the maximum and minimum impact energies. - Answer is approximately -99 Celsius
+%This code finds the minimum impact energy (J) 
+minimum_IE = min(Impact_energy)
+%This code finds the maximum impact energy (J) 
+maximum_IE= max(Impact_energy)
+%This code will average out the impact energies (J) 
+average_IE = (minimum_IE+maximum_IE)/2
+
+%Using the graph, the temperature corresponding to
+% the average impact energy is 
+% approximately -99 Celsius
+This code will establish a ductile-to-brittle transition temperature as the temperature at which the impact energy is 50 J. Answer is approximately -107.5 Celsius
+%Using the graph, the temperature corresponding to
+% the 50 J is 
+% approximately -107.5 Celsius
